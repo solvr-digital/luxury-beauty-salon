@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --elane-espresso: #090706;
+    --elane-espresso-deep: #050403;
+    --elane-espresso-surface: #17120F;
+    --elane-rose: #E23B55;
+    --elane-rose-light: #FF6B8B;
+    --elane-rose-rich: #C72C41;
+    --elane-pearl: #FFF0F3;
+    --elane-gold: #E2B887;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #090706;
+    color: #FFF0F3;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    background-color: #090706;
+    color: #FFF0F3;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #090706;
+  }
+
+  ::selection {
+    background-color: #E23B55;
+    color: #FFF0F3;
+  }
+
+  /* Custom Luxury Rose Red Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #090706;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(226, 59, 85, 0.5);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF6B8B;
+  }
+}
+
+/* Glassmorphism Luxury Utilities */
+.glass-elane {
+  background: rgba(17, 13, 11, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(226, 59, 85, 0.25);
+}
+
+.glass-elane-card {
+  background: linear-gradient(145deg, rgba(23, 18, 15, 0.88) 0%, rgba(9, 7, 6, 0.96) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 59, 85, 0.2);
+}
+
+.glass-elane-card:hover {
+  border-color: rgba(226, 59, 85, 0.65);
+}
+
+/* Editorial Luxury Typography */
+.font-italiana {
+  font-family: 'Italiana', serif;
+  letter-spacing: 0.02em;
+}
+
+.font-editorial {
+  font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+.font-display-title {
+  font-family: 'Cinzel', 'Italiana', serif;
+  letter-spacing: 0.08em;
+}
+
+/* Haute Couture Rose Red Gradient Shimmer */
+.text-rose-gradient {
+  background: linear-gradient(135deg, #FFF0F2 0%, #FF758F 25%, #E23B55 60%, #C72C41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0F2 0%, #FF758F 30%, #E23B55 65%, #C72C41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-champagne-gradient {
+  background: linear-gradient(135deg, #FFF0F2 0%, #FF8FA3 35%, #E23B55 70%, #941829 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-hairline {
+  border-color: rgba(226, 59, 85, 0.22);
+}
+
+/* Ambient Radial Glow Lighting */
+.radial-rose-glow {
+  background: radial-gradient(circle, rgba(226, 59, 85, 0.18) 0%, rgba(9, 7, 6, 0) 70%);
+}
+
+.radial-champagne-glow {
+  background: radial-gradient(circle, rgba(226, 59, 85, 0.18) 0%, rgba(9, 7, 6, 0) 70%);
+}
+
+/* Hide scrollbars for clean carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
