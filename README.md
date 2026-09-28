@@ -2,6 +2,7 @@
 
 A premium beauty salon website designed with an elegant editorial aesthetic, cinematic visuals, and smooth scroll-driven animations.
 
+#🔗LIVE LINK - https://luxury-beauty-salon.vedikavinaceous187.workers.dev/ 
 ## ✨ Features
 
 - Premium luxury UI
